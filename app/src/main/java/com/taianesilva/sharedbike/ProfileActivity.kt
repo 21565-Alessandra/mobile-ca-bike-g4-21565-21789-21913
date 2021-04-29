@@ -1,7 +1,9 @@
 package com.taianesilva.sharedbike
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import org.w3c.dom.Text
 
@@ -22,6 +24,11 @@ class ProfileActivity : AppCompatActivity() {
         displayUser.text = user
         welcomeText.text = "Welcome"
 
+
+    }
+
+    fun openMapsActivity2(view: View) {val intent = Intent(this, MapsActivity2:: class.java)
+        startActivity(intent)
 
     }
 }
